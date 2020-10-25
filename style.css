@@ -92,6 +92,7 @@
     color: #932224;
     font-family: 'bloody';
     font-size: 4vw;
+    animation: fontbulger 3s infinite;
   }
   
   #selectedNames{
@@ -99,6 +100,20 @@
     font-family: 'bloody';
     font-size: 3vw;
     flex-direction: column;
+  }
+
+  @keyframes fontbulger {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
   }
   
   #boxSelectedNames{
